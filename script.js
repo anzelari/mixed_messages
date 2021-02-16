@@ -2,6 +2,10 @@ const planets = ['Moon', 'Sun', 'Mercury', 'Venus', 'Mars'];
 
 const elements = ['Water', 'Earth', 'Fire', 'Air'];
 
+/*Note: all data could be placed in one object,
+like {water: {moon: "", sun: ""...}, earth: {moon:""...}}
+leave this for another project*/
+
 const activities = {
    'Moon and Water': "mediate",
    'Sun and Water': "express your emotions through art",
@@ -15,7 +19,7 @@ const activities = {
    'Venus and Earth': "eat something delicious ",
    'Mars and Earth': "cook a dinner for your family",
 
-   'Moon and Fire': "dance",
+   'Moon and Fire': "go for dancing",
    'Sun and Fire': "add your picture to Instagram",
    'Mercury and Fire': "be straightforward and tell the truth",
    'Venus and Fire': "show your love, be expressive and creative",
@@ -33,13 +37,16 @@ const randomNum = (arr) => {
    return Math.floor(Math.random()*arr.length);
 };
 
-//choose random planet and random element, and concatenate them
-const randomPlanetIndex = randomNum(planets);
-const randomElementIndex = randomNum(elements);
-const planetElement = `${planets[randomPlanetIndex]} and ${elements[randomElementIndex]}`;
-console.log(planetElement);
+//random planet and random element concatenation
+const randomPlanet = planets[randomNum(planets)];
+const randomElement = elements[randomNum(elements)];
+const planetElement = `${randomPlanet} and ${randomElement}`;
 
-
-const messageOne = "Your planet is ";
-const messageTwo = "Your element is ";
-const messageThree = "It is time to ";
+//log the messages
+for (let activity in activities ) {
+   if (activity === planetElement) {
+      console.log(`At the moment your planet is ${randomPlanet}`);
+      console.log(`and your element is ${randomElement}.`);
+      console.log(`It is time to ${activities[activity]}`);
+   }
+};
