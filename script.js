@@ -27,3 +27,7 @@ const activities = {
    'Venus and Air': "do something silly together with your partner",
    'Mars and Air': "do coding"
 };
+
+const messageOne = "Your planet is ";
+const messageTwo = "Your element is ";
+const messageThree = "It is time to ";
