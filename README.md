@@ -8,9 +8,9 @@ The output message example:
    - It is time to do yoga.
 	
    
-Project Objectives:
-[x] Build a message generator program using JavaScript
-[x] The programm must be truly random and its output should be made up of three different pieces of data
-[x] Use Git version control
-[x] Use command line
-[x] Develop locally on your computer
+Project Objectives:  
+[x] Build a message generator program using JavaScript  
+[x] The programm must be truly random and its output should be made up of three different pieces of data  
+[x] Use Git version control  
+[x] Use command line  
+[x] Develop locally on your computer  
