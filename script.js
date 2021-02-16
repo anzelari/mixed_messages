@@ -28,6 +28,18 @@ const activities = {
    'Mars and Air': "do coding"
 };
 
+// random number generator
+const randomNum = (arr) => {
+   return Math.floor(Math.random()*arr.length);
+};
+
+//choose random planet and random element, and concatenate them
+const randomPlanetIndex = randomNum(planets);
+const randomElementIndex = randomNum(elements);
+const planetElement = `${planets[randomPlanetIndex]} and ${elements[randomElementIndex]}`;
+console.log(planetElement);
+
+
 const messageOne = "Your planet is ";
 const messageTwo = "Your element is ";
 const messageThree = "It is time to ";
