@@ -9,7 +9,8 @@ The output message example:
 	
    
 Project Objectives:
-- Build a message generator program using JavaScript
-- Use Git version control
-- Use command line
-- Develop locally on your computer
+[x] Build a message generator program using JavaScript
+[x] The programm must be truly random and its output should be made up of three different pieces of data
+[x] Use Git version control
+[x] Use command line
+[x] Develop locally on your computer
